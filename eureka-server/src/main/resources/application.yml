@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: eureka-server
+  profiles:
+    active: peer1
+
+eureka:
+  server:
+    enable-self-preservation: false
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://192.168.2.9:5001/eureka/,http://192.168.2.9:5002/eureka/

@@ -17,6 +17,11 @@ public class ProductController {
     @Autowired
     private RestTemplate restTemplate = null;
 
+    @FunctionalInterface
+    public interface LambdaMethodService {
+        int add(int x, int y);
+    }
+
     @GetMapping("/purchase/{userId}/{productId}/{amount}")
     public ResultMessage purchaseProduct(@PathVariable("userId") Long userId, @PathVariable("productId") Long DoubleId, @PathVariable("amount") Double amount) {
         System.out.println("扣减产品余额");
@@ -28,5 +33,11 @@ public class ProductController {
         System.out.println(rm.getMessage());
         System.out.println("记录交易信息");
         return new ResultMessage(true, "交易成功");
+    }
+
+    public static void main(String[] args) {
+        LambdaMethodService service=(a,b)->a+b;
+        int add = service.add(1, 2);
+        System.out.println(add);
     }
 }

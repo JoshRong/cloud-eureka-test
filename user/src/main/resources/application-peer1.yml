@@ -1,2 +1,6 @@
 server:
   port: 6001
+eureka:
+  instance:
+    instance-id: ${eureka.instance.hostname}-user-${server.port}
+    hostname: localhost

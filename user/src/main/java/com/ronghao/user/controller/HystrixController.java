@@ -1,4 +1,4 @@
-package com.ronghao.user;
+package com.ronghao.user.controller;
 
 import com.ronghao.common.vo.ResultMessage;
 import org.springframework.web.bind.annotation.GetMapping;

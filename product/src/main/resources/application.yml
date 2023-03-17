@@ -7,3 +7,6 @@ spring:
     name: product
   profiles:
     active: peer1
+feign:
+  circuitbreaker:
+    enabled: true

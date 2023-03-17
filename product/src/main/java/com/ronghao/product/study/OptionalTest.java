@@ -1,4 +1,4 @@
-package com.ronghao.product;
+package com.ronghao.product.study;
 
 import java.util.Optional;
 

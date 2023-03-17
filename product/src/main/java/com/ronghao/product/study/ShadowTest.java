@@ -1,4 +1,4 @@
-package com.ronghao.product;
+package com.ronghao.product.study;
 
 public class ShadowTest {
     public int x = 0;

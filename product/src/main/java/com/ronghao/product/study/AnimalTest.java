@@ -1,4 +1,4 @@
-package com.ronghao.product;
+package com.ronghao.product.study;
 
 public class AnimalTest {
     private final String ANIMAL = "动物";

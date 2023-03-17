@@ -1,4 +1,4 @@
-package com.ronghao.product;
+package com.ronghao.product.study;
 
 public class Test {
     public static void main(String[] args) {
